@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 </head>
-    <body style="background-color:Yellow">
+    <body style="background-color:Red">
  
         <p style="font-size:26px" style="text-align: center">
             Today's date: <%= (new java.util.Date()).toString()%>
