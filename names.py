@@ -1,2 +1,2 @@
-names = [ g,y,t,h,r,i]
+names = [ "gir", "yiz","tir","hir","rir","iir"]
 print(names)
