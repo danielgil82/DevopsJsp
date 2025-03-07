@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('First Stage') {
             steps {
-                python names.py
+                sh 'python3 names.py'
             }
         }
         stage('Second Stage') {
             steps {
-                python names.py
+                sh 'python3 names.py'
             }
         }
     }
