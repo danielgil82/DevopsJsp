@@ -7,5 +7,10 @@ pipeline {
                 python main.py
             }
         }
+        stage('Second Stage') {
+            steps {
+                python main.py
+            }
+        }
     }
 }
