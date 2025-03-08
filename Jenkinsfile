@@ -1,14 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage('First Stage') {
+        stage('Create new file') {
+            steps {
+                bat 'cd %USERPROFILE%\\Desktop\\AnotherDir'
+                bat 'cd . > file_name.txt'
+            }
+        }
+        stage('Execute names.py') {
             steps {
                 bat 'python names.py'
             }
         }
-        stage('Second Stage') {
+        stage('Print something') {
             steps {
-                bat 'python names.py'
+                bat 'echo Hello from Pipeline!'
             }
         }
     }
