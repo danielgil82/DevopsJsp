@@ -4,7 +4,7 @@ pipeline {
         stage('Create new file') {
             steps {
                 bat 'cd %USERPROFILE%\\Desktop\\AnotherDir'
-                bat 'cd . > file_name.txt'
+                bat 'echo keep_following . > data.txt'
             }
         }
         stage('Execute names.py') {
