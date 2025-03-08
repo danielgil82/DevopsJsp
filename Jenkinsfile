@@ -3,9 +3,11 @@ pipeline {
     stages {
         stage('Create new file') {
             steps {
-                bat 'cd %USERPROFILE%\\Desktop\\AnotherDir'
-                echo 'pwd'
-                bat 'echo keep_following > data.txt'
+               bat '''
+               cd %USERPROFILE%\\Desktop\\AnotherDir
+               echo %CD%
+               echo keep_following > data.txt
+               '''
             }
         }
         stage('Execute names.py') {
