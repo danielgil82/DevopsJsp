@@ -4,6 +4,7 @@ pipeline {
         stage('Create new file') {
             steps {
                 bat 'cd %USERPROFILE%\\Desktop\\AnotherDir'
+                bat 'pwd'
                 bat 'echo keep_following > data.txt'
             }
         }
